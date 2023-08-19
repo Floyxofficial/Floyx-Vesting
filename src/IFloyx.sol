@@ -87,5 +87,5 @@ interface IFloyx {
         uint256 amount
     ) external returns (bool);
 
-    function mint(address to, uint256 amount) external;
+    function mint(address to, uint256 amount) external returns(bool);
 }
