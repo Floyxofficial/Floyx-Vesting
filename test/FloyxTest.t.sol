@@ -8,7 +8,7 @@ interface MintableToken {
     function mint(address, uint256) external;
 }
 
-contract FloyxTest is Test {
+contract FLOYXTOKENTest is Test {
     FLOYXTOKEN floyx;
     address owner;
 
@@ -44,3 +44,4 @@ contract FloyxTest is Test {
         assertEq(floyx.balanceOf(owner), 0);
     }
 }
+
