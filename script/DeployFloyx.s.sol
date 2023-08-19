@@ -5,9 +5,9 @@ import "forge-std/Script.sol";
 import {Floyx} from "src/Floyx.sol";
 
 contract FloyxScript is Script {
-    function run() external returns (Floyx) {
+    function run() external returns (FLOYXTOKEN) {
         vm.startBroadcast();
-        Floyx floyx = new Floyx();
+        FLOYXTOKEN floyx = new FLOYXTOKEN();
         vm.stopBroadcast();
         return floyx;
     }
