@@ -9,16 +9,16 @@ interface MintableToken {
 }
 
 contract FloyxTest is Test {
-    Floyx floyx;
+    FLOYXTOKEN floyx;
     address owner;
 
     function setUp() public {
-        floyx = new Floyx();
+        floyx = new FLOYXTOKEN();
         owner = address(this);
     }
 
     function testTokenNameAndSymbol() public {
-        string memory expectedName = "Floyx";
+        string memory expectedName = "FLOYX TOKEN";
         string memory expectedSymbol = "FLOYX";
 
         assertEq(floyx.name(), expectedName);
